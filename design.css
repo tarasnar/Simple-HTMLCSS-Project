@@ -1,0 +1,92 @@
+body{
+    background-image: url('https://www.nationsonline.org/maps/Physical-World-Map.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Mexico,#Papua,#Iceland,#Korea,#Sweden,#Georgia,#Honduras,#Tunisia,#Austria{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    height: 500px;
+    width: 500px;
+    font-size: 36px;
+    font-family: 'Tilt Warp', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: absolute;
+}
+
+.front{
+    background-color: dodgerblue;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    background-color: saddlebrown;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+#Mexico:hover {
+    transform: rotateY(180deg);
+}
+
+#Papua:hover {
+    transform: rotateY(180deg);
+}
+
+#Iceland:hover {
+    transform: rotateY(180deg);
+}
+
+#Korea:hover {
+    transform: rotateY(180deg);
+}
+
+#Sweden:hover {
+    transform: rotateY(180deg);
+}
+
+#Georgia:hover {
+    transform: rotateY(180deg);
+}
+
+#Honduras:hover {
+    transform: rotateY(180deg);
+}
+
+#Tunisia:hover {
+    transform: rotateY(180deg);
+}
+
+#Austria:hover {
+    transform: rotateY(180deg);
+}
+
+.container{
+    perspective: 1000px;
+}
